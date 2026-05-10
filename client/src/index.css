@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: Arial, sans-serif;
+}
+
+body {
+
+  background: #f3f4f6;
+
+  color: #111827;
+}
+
+
+/* Container */
+
+.container {
+
+  padding: 40px;
+}
+
+
+/* Navbar */
+
+.navbar {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 20px 40px;
+
+  background: #111827;
+
+  color: white;
+}
+
+.nav-links {
+
+  display: flex;
+
+  gap: 15px;
+}
+
+.nav-links button {
+
+  background: #2563eb;
+}
+
+
+/* Hero Section */
+
+.hero {
+
+  text-align: center;
+
+  padding: 80px 20px;
+
+  background: white;
+}
+
+.hero h1 {
+
+  font-size: 50px;
+
+  margin-bottom: 20px;
+}
+
+.hero p {
+
+  font-size: 20px;
+
+  color: gray;
+}
+
+
+/* Buttons */
+
+button {
+
+  padding: 10px 20px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #2563eb;
+
+  color: white;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+button:hover {
+
+  background: #1d4ed8;
+}
+
+
+/* Inputs */
+
+input,
+select {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 10px;
+
+  border-radius: 5px;
+
+  border: 1px solid #ccc;
+
+  font-size: 15px;
+}
+
+
+/* Form */
+
+form {
+
+  max-width: 400px;
+
+  margin: auto;
+
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Grid */
+
+.grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+
+  gap: 20px;
+}
+
+
+/* Cards */
+
+.card {
+
+  background: white;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  text-align: center;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+
+  width: 80px;
+
+  margin-bottom: 15px;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+
+  padding: 40px;
+}
+
+.dashboard-buttons {
+
+  display: flex;
+
+  gap: 15px;
+
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+
+
+/* Booking Cards */
+
+.booking-card {
+
+  background: white;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+/* Hero Banner */
+
+.hero-banner {
+
+  min-height: 70vh;
+
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+    ),
+
+    url("https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  color: white;
+}
+
+.hero-banner h1 {
+
+  font-size: 60px;
+
+  margin-bottom: 20px;
+}
+
+.hero-banner p {
+
+  font-size: 22px;
+
+  margin-bottom: 30px;
+}
+
+
+/* Service Card Hover */
+
+.card {
+
+  transition: 0.3s;
+}
+
+button:hover {
+
+  transform: scale(1.05);
+
+}
+
+.card:hover {
+
+  transform: translateY(-8px);
+}
+/* Booking Status */
+
+.status {
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  color: white;
+
+  font-size: 14px;
+
+  display: inline-block;
+
+  margin-top: 10px;
+}
+
+.pending {
+
+  background: orange;
+}
+
+.accepted {
+
+  background: #2563eb;
+}
+
+.completed {
+
+  background: #10b981;
+}
