@@ -45,7 +45,7 @@ function BookService() {
 
       await axios.post(
 
-        "http://localhost:5000/api/bookings",
+        "https://urban-service-app-r3ee.onrender.com/api/bookings",
 
         {
 

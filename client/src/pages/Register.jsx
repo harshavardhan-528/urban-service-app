@@ -61,7 +61,7 @@ function Register() {
 
       await axios.post(
 
-        "http://localhost:5000/api/otp/send-otp",
+        "https://urban-service-app-r3ee.onrender.com/api/otp/send-otp",
 
         {
           email: formData.email,
@@ -91,7 +91,7 @@ function Register() {
 
       await axios.post(
 
-        "http://localhost:5000/api/otp/verify-otp",
+        "https://urban-service-app-r3ee.onrender.com/api/otp/verify-otp",
 
         {
           otp,
@@ -129,7 +129,7 @@ function Register() {
 
       await axios.post(
 
-        "http://localhost:5000/api/auth/register",
+        "https://urban-service-app-r3ee.onrender.com/api/auth/register",
 
         formData
 

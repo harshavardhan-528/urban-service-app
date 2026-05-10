@@ -27,7 +27,7 @@ function MyBookings() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/bookings"
+        "https://urban-service-app-r3ee.onrender.com/api/bookings"
       );
 
       const myBookings =
