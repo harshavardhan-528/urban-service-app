@@ -60,8 +60,7 @@ function Login() {
 
       alert("Login Successful");
 
-      navigate("/Home");
-
+      navigate("/home");
     } catch (error) {
 
       alert(
