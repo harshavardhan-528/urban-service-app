@@ -5,22 +5,15 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home";
-
 import Login from "./pages/Login";
-
 import Register from "./pages/Register";
-
 import Dashboard from "./pages/Dashboard";
-
 import BookService from "./pages/BookService";
-
 import MyBookings from "./pages/MyBookings";
-
 import VendorDashboard from "./pages/VendorDashboard";
+import AdminDashboard from "./pages/AdminDashboard";
 
 import ProtectedRoute from "./components/ProtectedRoute";
-
-import AdminDashboard from "./pages/AdminDashboard";
 
 
 function App() {
@@ -31,7 +24,14 @@ function App() {
 
       <Routes>
 
-        {/* Public Routes */}
+        {/* =========================
+            PUBLIC ROUTES
+        ========================== */}
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
         <Route
           path="/home"
@@ -49,7 +49,9 @@ function App() {
         />
 
 
-        {/* Protected Routes */}
+        {/* =========================
+            PROTECTED ROUTES
+        ========================== */}
 
         <Route
           path="/dashboard"
@@ -88,13 +90,13 @@ function App() {
         />
 
         <Route
-  path="/admin-dashboard"
-  element={
-    <ProtectedRoute>
-      <AdminDashboard />
-    </ProtectedRoute>
-  }
-/>
+          path="/admin-dashboard"
+          element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
 
       </Routes>
 
