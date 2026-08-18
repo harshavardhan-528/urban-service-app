@@ -34,7 +34,7 @@ function App() {
         {/* Public Routes */}
 
         <Route
-          path="/"
+          path="/home"
           element={<Home />}
         />
 
